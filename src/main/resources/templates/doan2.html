@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+<link th:href="@{/resources/css/chandoan.css}" rel="stylesheet"/>
+</head>
+<body>
+
+     <div class="container section-plan">
+         <div class="row">
+           <div class="col-md-4 col-sm-4 col-xs-12">
+             <div class="row plan-box plan-danger text-center">
+               <div class="col-md-12 section1">
+                 <h2>Chọn Bệnh Nhân</h2>
+               </div>
+               <div class="col-md-12 section2">
+                 <h3>Vui lòng chọn 1</h3>
+               </div>
+               <div class="col-md-12 section3 themBenhNhan">
+                 <p id="1bn">chọn</p>
+                 <p id="2bn">XXX</p>
+                 <p id="3bn">XXX</p>
+                 <p id="4bn">XXX</p>
+                 <p id="5bn">XXX</p>
+               </div>
+               <div class="col-md-12 section4">
+                 <button class="btn btn-danger btn-block">
+                 		 <select class="browser-default custom-select  benhNhan" > 
+                            <option th:each="benhNhan : ${benhNhans}" th:value="${benhNhan.idBN}" th:text="${benhNhan.tenBN}" >Options</option>
+                          </select>
+                         <button type="button" class="btn btn-sm btn-primary benhNhan">Thêm</button>
+                 </button>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4 col-sm-4 col-xs-12">
+             <div class="row plan-box plan-warning text-center">
+               <div class="col-md-12 section1">
+                 <h2>Chọn Triệu Chứng</h2>
+               </div>
+               <div class="col-md-12 section2">
+                 <h3>Vui lòng Chọn</h3>
+               </div>
+               <div class="col-md-12 section3 themTrieuChung">
+                 <p id="1tc">chọn</p>
+                 <p id="2tc">chọn</p>
+                 <p id="3tc">chọn</p>
+                 <p id="4tc">chọn</p>
+                 <p id="5tc">chọn</p>
+                 <p id="6tc">chọn</p>
+                 <p id="7tc">chọn</p>
+                 <p id="8tc">chọn</p>
+                 <p id="9tc">chọn</p>
+                 <p id="10tc">chọn</p>
+               </div>
+               <div class="col-md-12 section4">
+                 <button class="btn btn-warning btn-block">
+                        <select class="browser-default custom-select trieuChung"> 
+                                 <div  th:each="trieuChung: ${trieuChungs}" >
+                                 <option  th:value="${trieuChung.idTC}" th:text="${trieuChung.tenTC}"></option>
+                           </div>
+                                
+                         </select>
+                         <button type="button" class="btn btn-sm btn-primary trieuChung">Thêm</button>
+                 </button>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4 col-sm-4 col-xs-12">
+             <div class="row plan-box plan-success text-center">
+               <div class="col-md-12 section1">
+                 <h2>Bệnh cần chẩn đoán</h2>
+               </div>
+               <div class="col-md-12 section2">
+                 <h3>Vui lòng chọn 1</h3>
+               </div>
+               <div class="col-md-12 section3 themBenh">
+                 <p id="1b">chọn</p>
+                 <p id="2b">chọn</p>
+                 <p id="3b">chọn</p>
+                 <p id="4b">chọn</p>
+                 <p id="5b">chọn</p>
+               </div>
+               <div class="col-md-12 section4">
+                 <button class="btn btn-success btn-block">
+                        <select class="browser-default custom-select  benh"> 
+                                
+                                      <div  th:each="benh: ${benhs}" >
+                                 <option  th:value="${benh.idBenh}" th:text="${benh.tenBenh}"></option>
+                           </div>
+                                
+                         </select>
+                        
+                        <button type="button" class="btn btn-sm btn-primary benh">Thêm</button>
+                        
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="btn btn-large btn-block btn-primary chanDoan">TẠO BẢNG NHẬP DỮ LIỆU</button>
+       </div>
+
+
+
+
+     <form th:action="@{/ketqua}" th:object="${listBNTC}" method="post">
+      <!-- ở đây cần gửi nhiều object hơn -->
+        <div class="container-fluid bangDuLieu display" >
+          <div class="title">
+              <h3>THÔNG SỐ DỮ LIỆU</h2>
+              <div class="chuthich">
+                  <div>Khẳng định</div>  
+                  <div>Trung lập</div>
+                  <div>Phủ định</div>
+
+              </div>
+          </div>
+            
+        
+          <table class="table table-dark ">
+            <thead >
+              <tr>
+                <th >Tên BN/TC</th>
+                <th id="tc1" class="display" >Tên TC</th>
+                <th id="tc2"  class="display">Tên TC</th>
+                <th id="tc3" class="display">Tên TC</th>
+                <th id="tc4" class="display">Tên TC</th>
+                <th id="tc5"  class="display">Tên TC/th>
+                <th id="tc6"  class="display">Tên TC</th>
+                <th id="tc7" class="display">Tên TC</th>
+                <th id="tc8" class="display">Tên TC</th>
+                <th id="tc9"  class="display">Tên TC</th>
+                <th id="tc10" class="display">Tên TC</th>
+                
+              </tr>
+            </thead>
+            
+            
+           
+            <tbody >
+           
+              <tr>
+                <th scope="row" id="tenBN" >
+                Tên Bệnh Nhân
+                	
+                </th>
+                
+                 <div th:each="row, stat : ${listBNTC.bn_TCs}">
+                 	<td class="display" th:id="'data'+(${stat.index}+1)">
+                 		<input type="text" name="kd" id=""  th:field="*{bn_TCs[__${stat.index}__].kd}">
+	                    <input type="text" name="tb" id=""  th:field="*{bn_TCs[__${stat.index}__].tb}">
+	                    <input type="text" name="pd" id=""  th:field="*{bn_TCs[__${stat.index}__].pd}">
+	                    <input type="text" name="idBN" id=""  th:field="*{bn_TCs[__${stat.index}__].idBN}" class="display">
+	                    <input type="text" name="idTC" id=""  th:field="*{bn_TCs[__${stat.index}__].idTC}" class="display">
+	                   
+                 	</td>
+                 </div>
+                 
+              
+              
+              </tr>
+                     
+            </tbody>
+          </table>
+          
+          </div>
+          <div class="container">
+            
+            <button type="submit" class="btn btn-large btn-block btn-danger" >CHẨN ĐOÁN</button>
+            
+          </div>
+         
+
+        </form>
+        
+        
+  
+        
+        
+       
+   <script>
+   $(document).ready(function () {
+       var lenghTCTT=0;
+       var lenghBenh=0;
+       var lengh=5;
+       var lenghTC=10;
+ 
+       $("button.benh").click(
+           function(){
+               var benh = [];
+               var tenBenh=[];
+               $.each($("select.benh option:selected"), function(){            
+                   benh.push($(this).val());
+                   tenBenh.push($(this).text());
+               });
+               alert("Bạn có chắc chắn muốn thêm: " + tenBenh.join(", "));
+               for(var i=1;i<=lengh;i++){
+                   var s="div.themBenh p"+"#"+i+"b";
+                   if($(s).text()==='chọn'){
+                       $(s).text(tenBenh.join(","));
+                       var tc2='input[name="bn_TCs['+(i-1)+'].idBN"]';
+                       $(tc2).attr("value",benh.join(","));
+                       lenghBenh++;
+                       break;
+                   }
+                   
+               }
+               
+           }
+       )
+ 
+       $("button.benhNhan").click(
+           function(){
+               var benhNhan = [];
+               var tenBenhNhan=[];
+               $.each($("select.benhNhan option:selected"), function(){            
+                   benhNhan.push($(this).val());
+                   tenBenhNhan.push($(this).text());
+               });
+               alert("Bạn có chắc chắn muốn thêm:  - " + tenBenhNhan.join(", "));
+               for(var i=1;i<=lengh;i++){
+                   var s="div.themBenhNhan p"+"#"+i+"bn";
+                   if($(s).text()!=='xxx'){
+                       $(s).text(tenBenhNhan.join(","));
+                       $("th#tenBN").text(tenBenhNhan.join(","));
+                      
+                      //  $( "input[name='bn_TCs[0].idBN'" ).val(benhNhan.join(","));
+                       break;
+                   }
+                   
+               }
+               
+           }
+       )
+ 
+       $("button.trieuChung").click(
+           function(){
+               var trieuChung = [];
+               var tenTrieuChung=[];
+               $.each($("select.trieuChung option:selected"), function(){            
+                   trieuChung.push($(this).val());
+                   tenTrieuChung.push($(this).text());
+               });
+               alert("Bạn có chắc chắn muốn thêm:  - " + tenTrieuChung.join(", "));
+               for(var i=1;i<=lenghTC;i++){
+                   var s="div.themTrieuChung p"+"#"+i+"tc";
+                   var j;
+                   if($(s).text()==='chọn' ){
+                       
+                     
+                       var string="th#tc"+i;
+                       var stringdata="td#data"+i;
+                       var tc='input[name="bn_TCs['+(i-1)+'].idTC"]';
+                      
+                       $(string).text(tenTrieuChung.join(","));
+                       $(tc).attr("value",trieuChung.join(","));
+
+                       $(s).text(tenTrieuChung.join(","));
+                       $(string).removeClass("display");
+                       $(stringdata).removeClass("display");
+                       lenghTCTT++;
+                       break;
+                   }
+               }
+               
+           }
+       )
+       $("button.chanDoan").click(function (e) { 
+           e.preventDefault();
+          console.log(lenghTCTT);
+          console.log(lenghBenh);
+          $("div.bangDuLieu").addClass("active");
+         
+           
+       });
+      
+  
+   });
+   </script>
+  
+   
+</body>
+</html>

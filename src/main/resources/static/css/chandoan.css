@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{background-image: url('https://lcmedsoc.org/wp-content/uploads/2016/07/doctors.jpg');background-size: cover;background-repeat: no-repeat;height: 100%;font-family: 'Numans', sans-serif;}
+
+body{
+    background-color: #F0F0F0;
+  }
+  .section-plan{
+      background-color: #f1f1f1;
+      padding:30px;
+  }
+  .plan-box{
+      margin:0px;
+      border:1px solid #D9544F;
+      border-radius:2px;
+  }
+  .plan-danger{
+      background-color: #D9544F;
+  }
+  .section1{
+      padding: 15px 0px 15px 0px;
+      color:#fff;
+  }
+  .section2{
+      background-color: #BCBCBC;
+      padding: 15px 0px 15px 0px;
+  }
+  .section2 h3{
+      font-size:30px;
+      color:#757A74;
+      font-weight: bold;
+  }
+  .section3{
+      padding:0px;
+      background-color:#fff;
+  }
+  .section3 p{
+      padding:8px;
+      margin:0px;
+      border-bottom:1px solid #DDDDDD;
+      color: #787C7D;
+  }
+  .section4{
+      background-color: #F5F5F5;
+      padding: 10px;
+  }
+  .section4 button{
+      font-size:20px;
+  }
+
+select.browser-default.custom-select {
+    color: black;
+}
+  .plan-warning{
+      border:1px solid #EFAD4D;
+      background-color:#EFAD4D;
+  }
+  .plan-success{
+      border:1px solid #5BB85D;
+      background-color:#5BB85D;
+  }
+
+  *{
+      padding: 0px;
+  }
+
+.chuthich div:nth-child(1) {
+    background: #d9544f;
+    /* color: white; */
+    /* width: 100px; */
+    /* height: 30px; */
+    /* text-align: center; */
+}
+
+.chuthich div:nth-child(2) {
+    background: #efad4d;
+}
+
+.chuthich div:nth-child(3) {
+    background: #5cb85c;
+}
+
+.chuthich div {
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.chuthich {
+    display: flex;
+    width: 360px;
+    margin: auto;
+}
+
+.title h3 {
+    align-items: center;
+}
+
+.container-fluid.bangDuLieu {
+    border: 2px solid;
+}
+
+.bangDuLieu input {
+    /* BACKGROUND: #7b2c2c; */
+    width: 35px;
+}
+
+input[name="kd"] {
+    background: #d9544f;
+    color: white;
+}
+
+input[name="tb"] {
+    background: #efad4d;
+    color: white;
+}
+
+input[name="pd"] {
+    background: #5cb85c;
+    color: white;
+}
+
+input.kd {
+    background: red;
+}
+.display{
+    display: none;
+}
+.active{
+    display: block;
+}

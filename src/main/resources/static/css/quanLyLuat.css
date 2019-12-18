@@ -1,0 +1,98 @@
+
+
+*{
+    padding: 0;
+}
+
+.themBenh {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+h3 {
+text-align:left;
+}
+
+.themBenh h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+div.main{
+margin:50px auto;
+font-family:raleway;
+}
+div.main h1{
+text-align:center;
+align:center;
+word-spacing:5px;
+}
+div.login{width:50%;margin:0 auto;border-radius: 10px;font-family:raleway;border: 2px solid #ccc;padding: 10px 40px 25px;position: fixed;/* top: -10px; */left: 380px;height: 600px;background: black;overflow-y: scroll;}
+hr{
+border:0;
+border-bottom:1px solid #ccc;
+margin: 10px -40px;
+margin-bottom: 30px;
+}
+h2{
+background-color: #FEFFED;
+text-align:center;
+border-radius: 10px 10px 0 0;
+margin: -10px -40px;
+padding: 15px;
+}
+a{
+text-decoration:none;
+color: cornflowerblue;
+}
+
+i{
+color: cornflowerblue;
+}
+#content{
+alignment-adjust: central;
+margin:0 auto;
+text-align: left;
+}
+#note{
+clear: left;
+padding-top: 20px;
+margin-left: 8px;
+font-size: 18px;
+text-align: center;
+width:100%;
+}
+input[type=text],input[type=password],input[type=email]{
+width:99.5%;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+padding-left: 5px;
+font-size: 16px;
+font-family:raleway;
+}
+input[type=submit]{width: 100%;background-color: blue;color: white;border: 2px solid blue;padding: 10px;font-size:20px;cursor:pointer;border-radius: 5px;margin-bottom: 15px;}
+.msg{
+width:99.5%;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+padding-left: 5px;
+font-size: 16px;
+font-family:raleway;
+}
+p {
+text-align:justify;
+clear:both;
+width:432px
+}
+span {
+color:red
+}
+.display{
+    display: none;
+}
+
+

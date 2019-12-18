@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+<link th:href="@{/resources/css/contact.css}" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container py-4 my-2">
+                    <div class="row">
+                        <div class="col-md-4 pr-md-5">
+                            <img class=" rounded border" style="width:340px;height:460px" th:src="@{/images/__${benhNhan.linkanh}__}">
+                           
+                            <div class="pt-4 mt-2">
+                                <section class="mb-4 pb-1">
+                                    <h3 class="h6 font-weight-light text-secondary text-uppercase">Tiểu sử</h3>
+                                    <div class="work-experience pt-2">
+                                        <div class="work mb-4">
+                                            <strong class="h5 d-block text-secondary font-weight-bold mb-1">Viêm gan</strong>
+                                            <strong class="h6 d-block text-warning mb-1">Mức độ: Bình thường</strong>
+                                            <p class="text-secondary">Khám tại: BV Thanh Nhàn</p>
+                                        </div>
+                                        <div class="work mb-4">
+                                            <strong class="h5 d-block text-secondary font-weight-bold mb-1">Gãy chân</strong>
+                                            <strong class="h6 d-block text-warning mb-1">Mức độ: nhẹ</strong>
+                                            <p class="text-secondary">Khám tại: BV Thanh Nhàn</p>
+                                        </div>
+                                    </div>    
+                                </section>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="d-flex align-items-center">
+                                <h2 class="font-weight-bold m-0" th:utext="${benhNhan.tenBN}">
+                                    
+                                </h2>
+                                
+                            </div>
+                            <p class="h5 text-primary mt-2 d-block font-weight-light">
+                               Bệnh Nhân
+                            </p>
+                            <p class="lead mt-4" th:utext="${benhNhan.ghiChu}">
+                            <section class="d-flex mt-5">
+                                <button class="btn btn-light bg-transparent mr-3 mb-3">
+                                    <i class="fa fa-comments"></i>
+                                    Thêm 
+                                </button>
+                                <button class="btn btn-light bg-transparent mr-3 mb-3">
+                                    <i class="fa fa-warning"></i>
+                                    Báo Cáo
+                                </button>
+                                <button class="btn btn-primary mb-3">
+                                    <i class="fa fa-check"></i>
+                                    Nhắn tin
+                                </button>
+                            </section>
+                            <section class="mt-4">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                            Thông tin
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                            Đánh Gía   
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                            Qúa trình
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content py-4" id="myTabContent">
+                                    <div class="tab-pane py-3 fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <h6 class="text-uppercase font-weight-light text-secondary">
+                                            Thông tin liên hệ:
+                                        </h6>
+                                        <dl class="row mt-4 mb-4 pb-3">
+                                            <dt class="col-sm-3">SĐT</dt>
+                                            <dd class="col-sm-9" th:utext="${benhNhan.sdtBN}"></dd>
+                                            
+                                            <dt class="col-sm-3">Địa chỉ</dt>
+                                            <dd class="col-sm-9">
+                                                <address class="mb-0" th:utext="${benhNhan.diachiBN}">
+                                                   
+                                                </address>
+                                            </dd>
+                                            
+                                            <dt class="col-sm-3">Email</dt>
+                                            <dd class="col-sm-9">
+                                                <a href="#">nguyentronghuan24@gmail.com</a>
+                                            </dd>
+                                        </dl>
+                                        
+                                        
+                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+
+</head>
+<body>
+
+ <form th:object="${listBNTC}" method="post" th:action="@{/luunhieuobjectt}">
+
+<!--INPUT FIELDS-->
+        <div class="row">
+            <div class="col">
+                <div id="movieList">
+                    <div class="row">
+                        <div style="margin-left:100px;" class="col-4 form-group">tenloaidoan</div>
+                        <div style="margin-left:100px;" class="col-4 form-group">madoan</div>
+                    </div>
+                    <div class="row item" th:each="row, stat : ${listBNTC.bn_TCs}">
+                         <div class="col-lg-6 form-group">
+                         Xin chào
+                         </div>
+                        <div class="col-lg-6 form-group">
+                            <input th:field="*{bn_TCs[__${stat.index}__].kd}" type="text" class="form-control"/>
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <input th:field="*{bn_TCs[__${stat.index}__].pd}" type="text" class="form-control"/>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--ADD NEW ROW BUTTON-->
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-success" >Add row</button>
+            </div>
+        </div>
+        <!--SUBMIT FORM BUTTON-->
+        <div class="row text-right">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+     </form>
+     
+     
+     
+</body>
+</html>

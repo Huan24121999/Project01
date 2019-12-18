@@ -1,0 +1,568 @@
+<html ><head>
+        <title>Esteem  An Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+        <!-- custom-theme -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="Esteem Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+                function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- //custom-theme -->
+        
+        <link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <script th:src="@{/resources/jquery/jquery.min.js}"></script>
+        <script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+       
+        <link th:href="@{resources/css/bootstrap.css}" rel="stylesheet" type="text/css" media="all">
+        <link th:href="@{resources/css/component.css}" rel="stylesheet" type="text/css" media="all">
+        
+        <link th:href="@{resources/css/flipclock.css}" rel="stylesheet" type="text/css" media="all">
+        <link th:href="@{resources/css/circles.css}" rel="stylesheet" type="text/css" media="all">
+        <link th:href="@{resources/css/style_grid.css}" rel="stylesheet" type="text/css" media="all">
+        <link th:href="@{resources/css/style.css}" rel="stylesheet" type="text/css" media="all">
+        
+        <!-- font-awesome-icons -->
+        <link th:href="@{resources/css/font-awesome.css}" rel="stylesheet"> 
+        <!-- //font-awesome-icons -->
+        <link th:href="@{resources///fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800}" rel="stylesheet">
+        <script type="text/javascript" src="file:///D:/JAVA_EE/bootstrapdemo/web/js/plugins/export/libs/fabric.js/fabric.min.js" async=""></script><script type="text/javascript" src="file:///D:/JAVA_EE/bootstrapdemo/web/js/plugins/export/libs/FileSaver.js/FileSaver.min.js" async=""></script><script type="text/javascript" src="file:///D:/JAVA_EE/bootstrapdemo/web/js/plugins/export/libs/jszip/jszip.min.js" async=""></script><script type="text/javascript" src="file:///D:/JAVA_EE/bootstrapdemo/web/js/plugins/export/libs/pdfmake/pdfmake.min.js" async=""></script></head>
+        <body>
+        <!-- banner -->
+        <div class="wthree_agile_admin_info">
+                  <!-- /w3_agileits_top_nav-->
+                  <!-- /nav-->
+                  <div class="w3_agileits_top_nav" style="background:black">
+                    <ul id="gn-menu" class="gn-menu-main">
+                               <!-- /nav_agile_w3l -->
+                        <li class="gn-trigger">
+                            <a class="gn-icon gn-icon-menu gn-selected"><i class="fa fa-bars" aria-hidden="true"></i><span>Menu</span></a>
+                            
+                        </li>
+                        <!-- //nav_agile_w3l -->
+                        <li class="second logo"><h1><a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i>HUST</a></h1></li>
+                            <li class="second admin-pic">
+                               <ul class="top_dp_agile">
+                                            <li class="dropdown profile_details_drop">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <div class="profile_img">	
+                                                        <span class="prfil-img"><img src="images/admin.jpg" alt=""> </span> 
+                                                    </div>	
+                                                </a>
+                                                <ul class="dropdown-menu drp-mnu">
+                                                    <li> <a href="http://localhost:8082/createAccout"><i class="fa fa-cog"></i> Settings</a> </li> 
+                                                    <li> <a href=""><i class="fa fa-user"></i> Profile</a> </li> 
+                                                    <li> <a th:href="@{/}"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                                </ul>
+                                            </li>
+                                            
+                                </ul>
+                        </li>
+                        <li class="second top_bell_nav">
+                           <ul class="top_dp_agile ">
+                                            <li class="dropdown head-dpdn">
+                                                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-bell-o" aria-hidden="true"></i> <span class="badge blue">4</span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="notification_header">
+                                                            <h3>Lịch hẹn bệnh nhân</h3>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="">
+                                                        <div class="user_img"><img src="images/a3.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Trần Văn Minh</h6>
+                                                        
+                                                        <p><span>24/12/2019</span></p>
+                                                        </div>
+                                                      <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li class="odd"><a href="">
+                                                        <div class="user_img"><img src="images/a1.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Lê Tố Trinh</h6>
+                                                        
+                                                        <p><span>25/23/2019</span></p>
+                                                        </div>
+                                                       <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li><a href="">
+                                                        <div class="user_img"><img src="images/a2.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Trần Anh Tú</h6>
+                                                        <p></p>
+                                                        <p><span>26/12/2019</span></p>
+                                                        </div>
+                                                       <div class="clearfix"></div>	
+                                                     </a></li>
+                                                      <li><a href="">
+                                                        <div class="user_img"><img src="images/a4.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Lê Thị Mai</h6>
+                                                        <p>Đã hẹn</p>
+                                                        <p><span>20/11/2019</span></p>
+                                                        </div>
+                                                       <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li>
+                                                        <div class="notification_bottom">
+                                                            <a href="">Xem thêm ...</a>
+                                                        </div> 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                </ul>
+                        </li>
+                        <li class="second top_bell_nav" >
+                           <ul class="top_dp_agile ">
+                                            <li class="dropdown head-dpdn">
+                                                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span class="badge blue">3</span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="notification_header">
+                                                            <h3>Tin nhắn</h3>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="">
+                                                        <div class="user_img"><img src="images/a3.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Lê Văn Minh</h6>
+                                                        <p>bác sỹ ơi, tôi cần đơn thuốc</p>
+                                                        <p><span>Bệnh nhân</span></p>
+                                                        </div>
+                                                      <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li class="odd"><a href="">
+                                                        <div class="user_img"><img src="images/a1.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Lê Tuyết Trinh</h6>
+                                                        <p>Anh giúp bệnh nhân này giúp tôi</p>
+                                                        <p><span style="
+        background: #d23752;
+    ">Bác sỹ</span></p>
+                                                        </div>
+                                                       <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li><a href="">
+                                                        <div class="user_img"><img src="images/a2.jpg" alt=""></div>
+                                                       <div class="notification_desc">
+                                                         <h6>Lê Văn Định</h6>
+                                                        <p>Cảm ơn bác sỹ, tối khỏi bệnh rồi</p>
+                                                        <p><span>Bệnh nhân</span></p>
+                                                        </div>
+                                                       <div class="clearfix"></div>	
+                                                     </a></li>
+                                                     <li>
+                                                        <div class="notification_bottom">
+                                                            <a href="">Xem tin nhắn cũ hơn</a>
+                                                        </div> 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                </ul>
+                        </li>
+                        <li class="second top_bell_nav">
+                           <ul class="top_dp_agile ">
+                               <li class="dropdown head-dpdn">
+                                                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i><span class="badge blue">9</span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="notification_header">
+                                                            <h3>Qúa Trình điều trị</h3>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="">
+                                                        <div class="task-info">
+                                                            <span class="task-desc">Bệnh nhân:Lê Văn Minh</span><span class="percentage">40%</span>
+                                                            <div class="clearfix"></div>	
+                                                        </div>
+                                                        <div class="progress progress-striped active">
+                                                            <div class="bar yellow" style="width:40%;"></div>
+                                                        </div>
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <div class="task-info">
+                                                            <span class="task-desc">Bệnh nhân: Trần Thị Tố Uyên</span><span class="percentage">90%</span>
+                                                           <div class="clearfix"></div>	
+                                                        </div>
+                                                        <div class="progress progress-striped active">
+                                                             <div class="bar green" style="width:90%;"></div>
+                                                        </div>
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <div class="task-info">
+                                                            <span class="task-desc">Bệnh nhân: Mai Văn Hòa</span><span class="percentage">33%</span>
+                                                            <div class="clearfix"></div>	
+                                                        </div>
+                                                       <div class="progress progress-striped active">
+                                                             <div class="bar red" style="width: 33%;"></div>
+                                                        </div>
+                                                    </a></li>
+                                                    <li><a href="">
+                                                        <div class="task-info">
+                                                            <span class="task-desc">Bệnh nhân: Trần Thị Mai</span><span class="percentage">80%</span>
+                                                           <div class="clearfix"></div>	
+                                                        </div>
+                                                        <div class="progress progress-striped active">
+                                                             <div class="bar  blue" style="width: 80%;"></div>
+                                                        </div>
+                                                    </a></li>
+                                                    <li>
+                                                        <div class="notification_bottom">
+                                                            <a href="">Xem thêm...</a>
+                                                        </div> 
+                                                    </li>
+                                                </ul>
+                                            </li>	
+                                        </ul>
+                        </li>
+        
+                        <li class="second w3l_search">
+                         
+                                <form action="#" method="post">
+                                    <input type="search" name="search" placeholder="Search here..." required="">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            
+                        </li>
+                        <li class="second full-screen">
+                            <section class="full-top">
+                                <button id="toggle"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>	
+                            </section>
+                        </li>
+        
+                    </ul>
+                    <!-- //nav -->
+                    
+                </div>
+                <div class="clearfix"></div>
+                <!-- //w3_agileits_top_nav-->
+                <!-- /inner_content-->
+                        <div class="inner_content">
+                            <!-- /inner_content_w3_agile_info-->
+                            <div class="inner_content_w3_agile_info">
+                            <!-- /agile_top_w3_grids-->
+                               <div class="agile_top_w3_grids">
+                                      <ul class="ca-menu" style="display: block;margin: auto;align-items: center;">
+                                            <li>
+                                                <a th:href="@{/quanLyBenhUser}">
+                                                    
+                                                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                                                    <div class="ca-content">
+                                                        <h4 class="ca-main">100</h4>
+                                                        <h3 class="ca-sub">Xem thông tin về bệnh</h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                          <!--   <li>
+                                                <a th:href="@{/quanLyBenhNhanUser}">
+                                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                                    <div class="ca-content">
+                                                        <h4 class="ca-main one">1000</h4>
+                                                        <h3 class="ca-sub one">Xem thông tin bệnh nhân</h3>
+                                                    </div>
+                                                </a>
+                                            </li> -->
+                                            <li>
+                                                <a th:href="@{/quanLyTCUser}">
+                                                    <i class="fa fa-stethoscope" aria-hidden="true"></i>
+                                                    <div class="ca-content">
+                                                    <h4 class="ca-main two">200</h4>
+                                                        <h3 class="ca-sub two">Xem  triệu chứng</h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                          <!--   <li style="margin-right:0px">
+                                                <a th:href="@{/quanLyLuat}">
+                                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                                    <div class="ca-content">
+                                                        <h4 class="ca-main three">1000</h4>
+                                                        <h3 class="ca-sub three">Quản lý bộ luật</h3>
+                                                    </div>
+                                                </a>
+                                            </li> -->
+                                                <li style="width: 44%;">
+                                                <a th:href="@{/chanDoanUser}">
+                                                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                                                    <div class="ca-content">
+                                                        
+                                                        <h3 class="ca-sub four">Hỗ trợ chẩn đoán</h3>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <div class="clearfix"></div>
+                                        </ul>
+                               </div>
+                             <!-- //agile_top_w3_grids-->
+                                <!-- /agile_top_w3_post_sections-->
+                                    <div class="agile_top_w3_post_sections">
+                                           <div class="col-md-6 agile_top_w3_post agile_info_shadow">
+                                                   <div class="img_wthee_post" th:style="'background: url(/images/pic.jpg) no-repeat center ;background-size:cover'">
+                                                         <h3 class="w3_inner_tittle" style="font-family: none;">Đọc báo cùng bạn</h3>
+                                                         <h4 style="color: white"> TIN TỨC NỔI BẬT: </h4>
+                                                         <h4 style="color:white">
+                                                                <a href="https://baomoi.com/suc-khoe-y-te.epi">Nhập Viện vì uống rượu quá nhiều</a><br>
+                                                                <a href="https://baomoi.com/suc-khoe-y-te.epi">Đã tìm ra thuốc chữa bệnh ung thư</a><br>
+                                                                <a href="https://baomoi.com/suc-khoe-y-te.epi">Nhiều bệnh nhân sốt cao vào cận tết</a><br>
+                                                         </h4>
+                                                        
+                                                       
+                                                        
+                                                        
+                                                      
+                                                    </div>
+                                               </div>
+                                                <div class="col-md-6 agile_top_w3_post_info agile_info_shadow">
+                                                    <div class="img_wthee_post1" th:style="'background: url(/images/pic1.jpg) no-repeat center;'">
+                                                    <h3 class="w3_inner_tittle"></h3>
+                                                           <div class="main-example">
+                                                            <div class="clock flip-clock-wrapper"><span class="flip-clock-divider hours"><span class="flip-clock-label">Hours</span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider minutes"><span class="flip-clock-label">Minutes</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-label">Seconds</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li></ul></div>
+                                                            <div class="message"></div>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <div class="clearfix"></div>
+                                         </div>
+                                           
+                                <!-- //agile_top_w3_post_sections-->
+                                    <!-- /w3ls_agile_circle_progress-->
+                                    
+                                <!-- /w3ls_agile_circle_progress-->
+                                <!-- /chart_agile-->
+                                 
+                                  <!-- /w3ls_agile_circle_progress-->
+                                    
+                                <!-- /w3ls_agile_circle_progress-->
+                                 <!--/prograc-blocks_agileits-->
+                                    
+        
+                                      <!--//prograc-blocks_agileits-->
+                                <!-- /bottom_agileits_grids-->
+                                
+                                <!-- //bottom_agileits_grids-->
+                                                        <!-- /weather_w3_agile_info-->
+                                <div class="weather_w3_agile_info agile_info_shadow">
+                                  <div class="weather_w3_inner_info" th:style="'background: url(/images/bottom.jpg) no-repeat center;'">
+                                      
+                                         <div class="over_lay_agile" th:style="'background: url(/images/overlay.png) repeat;'">
+                                          <h3 class="w3_inner_tittle">THỜI TIẾT</h3>
+                                             <ul>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="partly-cloudy-day" width="60" height="60"></canvas>
+                                                </figure>
+                                                <h3>25 °C</h3>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="clear-day" width="60" height="60"></canvas>
+                                                </figure>
+                                                <div class="weather-text">
+                                                    <h4>WED</h4>
+                                                    <h5>27 °C</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="snow" width="60" height="60"></canvas>
+                                                </figure>
+                                                <div class="weather-text">
+                                                    <h4>THU</h4>
+                                                    <h5>13 °C</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="partly-cloudy-night" width="60" height="60"></canvas>
+                                                </figure>
+                                                <div class="weather-text">
+                                                    <h4>FRI</h4>
+                                                    <h5>18 °C</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="cloudy" width="60" height="60"></canvas>
+                                                </figure>
+                                                <div class="weather-text">
+                                                    <h4>SAT</h4>
+                                                    <h5>15 °C</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <figure class="icons">
+                                                    <canvas id="fog" width="60" height="60"></canvas>
+                                                </figure>
+                                                <div class="weather-text">
+                                                    <h4>SUN</h4>
+                                                    <h5>11 °C</h5>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>	
+                                </div>
+                                <!-- //weather_w3_agile_info-->
+                                <!-- /social_media-->
+                                  <div class="social_media_w3ls">
+                                 
+                                      <div class="col-md-3 socail_grid_agile facebook">
+                                             <ul class="icon_w3_info">
+                                               <li><a href="#" class="wthree_facebook"> <i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                               <li>BÁC SỸ</li>
+                                             </ul>
+                                              <ul class="icon_w3_social">
+                                                <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                              </ul>
+                                             <div class="clearfix"></div>
+                                              <div class="bottom_info_social">
+                                             <div class="col-md-4 agile_w3l_social_media_text_img">
+                                                <img src="images/admin.jpg" alt="">
+                                             </div>
+                                              <div class="col-md-8 agile_w3l_social_media_text">
+                                                <h4>Hoàng Minh Phong</h4>
+                                                <p>Bác sỹ da liễu</p>
+                                             </div>
+                                            
+                                             <div class="clearfix"></div>
+                                             </div>
+                                      </div>
+                                      <div class="col-md-3 socail_grid_agile twitter">
+                                                 <ul class="icon_w3_info">
+                                               <li><a href="#" class="wthree_facebook"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                               <li>BÁC SỸ</li>
+                                             </ul>
+                                              <ul class="icon_w3_social">
+                                                <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                              </ul>
+                                             <div class="clearfix"></div>
+                                              <div class="bottom_info_social">
+                                             <div class="col-md-4 agile_w3l_social_media_text_img">
+                                                <img src="images/a1.jpg" alt="">
+                                             </div>
+                                              <div class="col-md-8 agile_w3l_social_media_text">
+                                                <h4>Lê Tuyết Trinh</h4>
+                                                <p>Bác sỹ răng hàm mặt</p>
+                                             </div>
+                                            
+                                             <div class="clearfix"></div>
+                                             </div>
+                                      </div>
+                                      <div class="col-md-3 socail_grid_agile gmail">
+                                             <ul class="icon_w3_info">
+                                               <li><a href="#" class="wthree_facebook"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                               <li>CHUYÊN VIÊN</li>
+                                             </ul>
+                                              <ul class="icon_w3_social">
+                                                <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                              </ul>
+                                             <div class="clearfix"></div>
+                                              <div class="bottom_info_social">
+                                             <div class="col-md-4 agile_w3l_social_media_text_img">
+                                                <img src="images/a2.jpg" alt="">
+                                             </div>
+                                              <div class="col-md-8 agile_w3l_social_media_text">
+                                                <h4>Nguyễn Văn Minh</h4>
+                                                <p>Bác sỹ nội khoa</p>
+                                             </div>
+                                            
+                                             <div class="clearfix"></div>
+                                             </div>
+                                      </div>
+                                      <div class="col-md-3 socail_grid_agile dribble">
+                                      
+                                         <ul class="icon_w3_info">
+                                              <li><a href="#" class="wthree_facebook"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                               <li>Y tá</li>
+                                             </ul>
+                                              <ul class="icon_w3_social">
+                                                <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                              </ul>
+                                             <div class="clearfix"></div>
+                                              <div class="bottom_info_social">
+                                             <div class="col-md-4 agile_w3l_social_media_text_img">
+                                                <img src="images/a4.jpg" alt="">
+                                             </div>
+                                              <div class="col-md-8 agile_w3l_social_media_text">
+                                                <h4>Nguyễn Thị Tố Uyên</h4>
+                                                <p>Bác sỹ tâm lý</p>
+                                             </div>
+                                            
+                                             <div class="clearfix"></div>
+                                             </div>
+        
+                                      </div>
+                                      <div class="clearfix"></div>
+                                                            
+                                </div>
+                                <!-- //social_media-->
+                            </div>
+                            <!-- //inner_content_w3_agile_info-->
+                        </div>
+                <!-- //inner_content-->
+            </div>
+        <!-- banner -->
+        <!--copy rights start here-->
+        <div class="copyrights"  >
+             <p>@ 20173148 Nguyễn Trọng Huấn CNTT 08 </p>
+        </div>	
+        
+        
+        <script type="text/javascript" th:src="@{js/jquery-2.1.4.min.js}"></script>
+  		
+  		<script th:src="@{js/gnmenu.js}"></script>
+                <script>
+                    new gnMenu( document.getElementById( 'gn-menu' ) );
+        </script>
+        
+        <script th:src="@{js/screenfull.js}"></script>
+		<script>
+		$(function () {
+			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+			if (!screenfull.enabled) {
+				return false;
+			}
+
+			
+
+			$('#toggle').click(function () {
+				screenfull.toggle($('#container')[0]);
+			});	
+		});
+		</script>
+		<script th:src="@{js/flipclock.js}"></script>
+	
+	    <script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			
+			clock = $('.clock').FlipClock({
+		        clockFace: 'HourlyCounter'
+		    });
+		});
+	</script>
+        
+
+		<script th:src="@{js/bars.js}"></script>
+       
+        <script type="text/javascript" th:src="@{js/bootstrap-3.1.1.min.js}"></script>
+        
+        </body></html>

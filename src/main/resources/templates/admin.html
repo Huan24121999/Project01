@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+<link th:href="@{/resources/css/chandoan.css}" rel="stylesheet"/>
+
+<head>
+	<meta charset="utf-8">
+	<title>No</title>
+	
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link th:href="@{/resources/css/normalize.css}" rel="stylesheet"/>
+	<link th:href="@{/resources/css/main.css}" rel="stylesheet"/>
+	<!-- <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css"> -->
+	<!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+	<script th:src="@{/resources/js/vendor/modernizr-2.6.2.min.js}"></script>
+	
+	<style type="text/css">
+	.display{
+	display:none;
+	}
+	.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	h1 {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 32px;
+		margin-bottom: 3px;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 100px;
+	}
+	</style>
+</head>
+<body class="demo" style="background:black">
+		
+	<div id="demo-content">
+
+		<header class="entry-header addClass">
+
+			
+
+			<h1 class="entry-title">Vui lòng đợi trong giây lát, hệ thống đang xử lý</h1>
+		</header>
+
+		<div id="loader-wrapper addClass" style="padding-top:50px">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
+
+		<div id="content" class="display" style="text-align:center">
+			<h2 style="color:white">KẾT QUẢ CHẨN ĐOÁN: </h2>
+			<h1 style="color:red" th:text="${mess}"></h1>
+		</div>
+
+	</div>
+	<!-- /Demo content -->
+	<script>
+	$(document).ready(function () {
+		setTimeout(() => {
+			$("header.addClass").css("display","none");
+			$("div#loader-wrapper addClass").addClass("display");
+			$("div#content").removeClass("display");
+		}, 3000);
+	});
+		
+	</script>
+
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+	<!-- <script th:src="@{/resources/js/main.js}"></script> -->
+	<!-- <script src="js/main.js"></script>
+ -->
+</body>
+</html>

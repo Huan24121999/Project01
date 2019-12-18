@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+<link th:href="@{/resources/css/chandoan.css}" rel="stylesheet"/>
+</head>
+<body>
+
+ <div class="container section-plan">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="row plan-box plan-danger text-center">
+          <div class="col-md-12 section1">
+            <h2>Chọn Bệnh Nhân</h2>
+          </div>
+          <div class="col-md-12 section2">
+            <h3>Vui lòng chọn 1</h3>
+          </div>
+          <div class="col-md-12 section3">
+            <p>chọn</p>
+            <p>chọn</p>
+            <p>chọn</p>
+          </div>
+          <div class="col-md-12 section4">
+            <button class="btn btn-danger btn-block">
+                    <select class="browser-default custom-select" > 
+                           <div  th:each="benhNhan: ${benhNhans}" >
+                                 <option  th:value="${benhNhan.idBN}" th:text="${benhNhan.tenBN}"></option>
+                           </div>
+                    </select>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="row plan-box plan-warning text-center">
+          <div class="col-md-12 section1">
+            <h2>Chọn Triệu Chứng</h2>
+          </div>
+          <div class="col-md-12 section2">
+            <h3>Vui lòng Chọn</h3>
+          </div>
+          <div class="col-md-12 section3">
+            <p>Personal use</p>
+            <p>Unlimited project</p>
+            <p>15/3 support</p>
+          </div>
+          <div class="col-md-12 section4">
+            <button class="btn btn-warning btn-block">
+                   <select class="browser-default custom-select" > 
+                           <div  th:each="trieuChung: ${trieuChungs}" >
+                                 <option  th:value="${trieuChung.idTC}" th:text="${trieuChung.tenTC}"></option>
+                           </div>
+                    </select>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="row plan-box plan-success text-center">
+          <div class="col-md-12 section1">
+            <h2>Bệnh cần chẩn đoán</h2>
+          </div>
+          <div class="col-md-12 section2">
+            <h3>Vui lòng chọn</h3>
+          </div>
+          <div class="col-md-12 section3">
+            <p>Personal use</p>
+            <p>Unlimited project</p>
+            <p>60/9 support</p>
+          </div>
+          <div class="col-md-12 section4">
+            <button class="btn btn-success btn-block">
+                   <select class="browser-default custom-select" > 
+                           <div  th:each="benh: ${benhs}" >
+                                 <option  th:value="${benh.idBenh}" th:text="${benh.tenBenh}"></option>
+                           </div>
+                    </select>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
